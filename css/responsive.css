@@ -1,0 +1,40 @@
+/**
+ * Making the site responsive with breakpoints for the following screens
+ *
+ * * mobile
+ * * tablets
+ * * monitors
+ * * large monitors
+ *
+ * @author    Dave Widmer <dave@davewidmer.net>
+ */
+ 
+@media (max-width: 767px) {
+	.container {
+		width: 100%;
+	}
+	
+	[class*="span"] {
+		display: block;
+		float: none;
+		width: auto;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 959px) {
+	.container {
+		width: 768px;
+	}
+}
+
+@media (min-width:960px) and (max-width: 1199px) {
+	.container {
+		width: 960px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.container {
+		width: 1200px;
+	}
+}
