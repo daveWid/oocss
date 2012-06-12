@@ -1,0 +1,12 @@
+/**
+ * Text Object
+ *
+ * Common styles for text treatments.
+ *
+ * @author    Dave Widmer <dave@davewidmer.net>
+ */
+
+body {
+	font-size:14px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
