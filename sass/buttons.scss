@@ -1,10 +1,5 @@
-/**
- * Buttons Object
- *
- * An object to quickly style up button elements
- *
- * @author    Dave Widmer <dave@davewidmer.net>
- */
+// Buttons
+// =========
 
 .button {
 	background-color:#248FE0;
@@ -22,10 +17,8 @@
 	border:1px solid rgba(0,0,0,0.25);
 	color:#FFF;
 	text-shadow: 1px 1px 1px rgba(0,0,0, 0.5);
-	background-image: -moz-linear-gradient(top, rgba(255,255,255, 0.2), rgba(255,255, 255, 0));
-	background-image: -webkit-linear-gradient(top, rgba(255,255,255, 0.2), rgba(255,255, 255, 0));
-	background-image: -o-linear-gradient(top, rgba(255,255,255, 0.2), rgba(255,255, 255, 0));
-	background-image: -ms-linear-gradient(top, rgba(255,255,255, 0.2), rgba(255,255, 255, 0));
+
+	@include gradient(top, rgba(255,255,255, 0.2), rgba(255,255,255,0));
 }
 
 .button:active {
