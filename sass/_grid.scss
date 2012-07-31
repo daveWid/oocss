@@ -1,5 +1,6 @@
-// Grid
-// =============
+/* =============================================================================
+   Grid
+   ========================================================================== */
 
 .container {
 	width: 960px;
@@ -8,6 +9,10 @@
 
 .row {
 	width:100%;
+
+	[class*="span"]:first-child {
+		margin-left: 0;
+	}
 }
 
 .row:before,
@@ -21,58 +26,16 @@
 }
 
 [class*="span"] {
+	margin-left: $gridGutter;
 	float: left;
-	-webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-      -ms-box-sizing: border-box;
-          box-sizing: border-box;
+	@include border-box;
 }
 
-.span1 {
-	width: 8.333333333333%;
-}
 
-.span2 {
-	width: 16.666666666667%;
-}
+@for $i from 1 through $gridColumns {
+	$j: $i - 1;
 
-.span3 {
-	width: 25%;
+	.span#{$i} {
+		width: ($gridSize * $i) + ($gridGutter * $j);
+	}
 }
-
-.span4 {
-	width: 33.333333333333%;
-}
-
-.span5 {
-	width: 41.666666666667%;
-}
-
-.span6 {
-	width: 50%;
-}
-
-.span7 {
-	width: 58.333333333333%;;
-}
-
-.span8 {
-	width: 66.666666666667%;
-}
-
-.span9 {
-	width: 75%;
-}
-
-.span10 {
-	width: 83.333333333333%;
-}
-
-.span11 {
-	width: 91.666666666667%;
-}
-
-.span12 {
-	width: 100%;
-}
-

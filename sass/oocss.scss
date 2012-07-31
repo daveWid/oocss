@@ -1,8 +1,20 @@
-@import "normalize";
+/*!
+	oocss.css
+	@author    Dave Widmer <dwidmer@bgsu.edu>
+*/
+
+/* =============================================================================
+   Object Oriented CSS
+   ========================================================================== */
+
+@import "variables";
 @import "mixins";
-@import "text";
-@import "block";
-@import "buttons";
+
+@import "normalize";
+
+@import "typography";
+@import "ui";
+
 @import "grid";
 @import "responsive";
 
