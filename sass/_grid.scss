@@ -9,10 +9,6 @@
 
 .row {
 	width:100%;
-
-	[class*="span"]:first-child {
-		margin-left: 0;
-	}
 }
 
 .row:before,
@@ -31,11 +27,30 @@
 	@include border-box;
 }
 
+[class*="span"]:first-child {
+	margin-left: 0;
+}
+
+/* Grid
+   ========================================================================== */
 
 @for $i from 1 through $gridColumns {
-	$j: $i - 1;
-
 	.span#{$i} {
-		width: ($gridSize * $i) + ($gridGutter * $j);
+		width: ($gridSize * $i) + ($gridGutter * ($i - 1));
+	}
+}
+
+/* Offsets
+   ========================================================================== */
+
+@for $i from 1 through ($gridColumns - 1) {
+	.offset#{$i} {
+		margin-left: ($gridSize * $i) + ($gridGutter * ($i + 1));
+	}
+
+	[class*="span"]:first-child{
+		&.offset#{$i}{
+			margin-left: ($gridSize * $i) + ($gridGutter * $i);
+		}
 	}
 }
