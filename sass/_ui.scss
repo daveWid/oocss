@@ -11,6 +11,7 @@
 	display: inline-block;
 	font-size: 1.125em;
 	padding: 0.625em 1.375em;
+	margin:0;
 	box-shadow:
 		1px 1px 0 hsla(0, 100%, 100%, 0.3) inset,
 		2px 2px 3px hsla(0, 100%, 0%, 0.25);
@@ -23,6 +24,8 @@
 	border:1px solid hsla(0, 100%, 0%, 0.25);
 	color:#FFF;
 	text-shadow: 1px 1px 1px hsla(0, 100%, 0%, 0.5);
+	vertical-align:middle;
+	line-height: 1;
 
 	@include gradient(top, hsla(0, 100%, 100%, 0.2), hsla(0, 100%, 100%, 0));
 }
@@ -31,4 +34,76 @@
 	box-shadow:
 		inset 0 0 5px 2px hsla(0, 100%, 0%, 0.2),
 		inset 1px 1px 0 hsla(0, 100%, 100%, 0.3);
+}
+
+/* Navigation
+   ========================================================================== */
+
+.navigation {
+	padding: 0;
+	list-style:none;
+	overflow:auto;
+	font-size: 1.25em;
+
+	li {
+		display:block;
+	}
+
+	a {
+		display: block;
+		padding: 0.5em 1em;
+		text-decoration: none;
+	}
+
+	&.collapsed {
+		li {
+			float:left;
+		}
+	}
+
+	&.inline {
+		li {
+			float:left;
+			margin-right: 1em;
+		}
+	}
+
+	&.pill {
+		a {
+			border-radius: 0.5em;
+		}
+	}
+
+}
+
+/* Messages
+   ========================================================================== */
+
+.message {
+	padding: 1em;
+	border-width:1px;
+	border-style:dotted;
+	background-repeat: no-repeat;
+	font-weight:bold;
+
+	&.error{
+		background-color: #FEE;
+		color: #900;
+	}
+
+	&.success{
+		background-color: #EFE;
+		color: #090;
+	}
+
+	&.warn {
+		background-color: #FEF6E1;
+		color: #CF950C;
+	}
+
+	&.info{
+		background-color: #E5F5FF;
+		color: #007ECC;
+	}
+
 }

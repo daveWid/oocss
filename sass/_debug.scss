@@ -10,4 +10,20 @@
 	[class*="span"] {
 		background-color: hsla(0, 100%, 50%, 0.3);
 	}
+
+/* Navigation
+   ========================================================================== */
+
+	&.navigation {
+		li {
+			a{
+				background-color: hsla(27, 100%, 50%, 0.25);
+			}
+
+			a:hover {
+				background-color: hsla(27, 100%, 50%, 0.5);
+			}
+		}
+	}
+
 }

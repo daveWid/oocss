@@ -22,64 +22,111 @@
 </head>
 <body>
 	
-	<div class="container content debug">
-		<div class="row">
-			<div class="span12">Span 12</div>
-		</div>
-		<div class="row">
-			<div class="span1">Span 1</div>
-			<div class="span11">Span 11</div>
-		</div>
-		<div class="row">
-			<div class="span2">Span 2</div>
-			<div class="span10">Span 10</div>
-		</div>
-		<div class="row">
-			<div class="span3">Span 3</div>
-			<div class="span9">Span 9</div>
-		</div>
-		<div class="row">
-			<div class="span4">Span 4</div>
-			<div class="span8">Span 8</div>
-		</div>
-		<div class="row">
-			<div class="span5">Span 5<br /> Large box</div>
-			<div class="span7">Span 7</div>
-		</div>
-		<div class="row">
-			<div class="span6">Span 6</div>
-			<div class="span6">Span 6</div>
-		</div>
-		<div class="row">
-			<div class="span1 offset11">
-				.span1 .offset11
-			</div>
-		</div>
-		<div class="row">
-			<div class="span2 offset10">
-				.span2 .offset10
-			</div>
-		</div>
-		<div class="row">
-			<div class="span3">.span3</div>
-			<div class="span6 offset3">
-				.span6 .offset3
-			</div>
-		</div>
-	</div>
+	<div class="container content">
 
-	<footer>
-		<div class="container">
+		<h1>Object Oriented CSS Guide</h1>
+
+		<h2>Grid <small>(.row > .span#)</small></h2>
+
+		<div class="debug">
 			<div class="row">
-				<div class="span12">
-					<a href="#test" class="button">Link</a>
-					<input type="submit" class="button red rounded" value="Submit" />
-					<a href="#test" class="button rounded">Link</a>
-					<button class="button black">Button</button>
-					<a href="#test" class="button green rounded">Link</a>
+				<div class="span12">.span12</div>
+			</div>
+			<div class="row">
+				<div class="span1">.span1</div>
+				<div class="span11">.span11</div>
+			</div>
+			<div class="row">
+				<div class="span2">.span2</div>
+				<div class="span10">.span10</div>
+			</div>
+			<div class="row">
+				<div class="span3">.span3</div>
+				<div class="span9">.span9</div>
+			</div>
+			<div class="row">
+				<div class="span4">.span4</div>
+				<div class="span8">.span8</div>
+			</div>
+			<div class="row">
+				<div class="span5">.span5<br /> Large box</div>
+				<div class="span7">.span7</div>
+			</div>
+			<div class="row">
+				<div class="span6">.span6</div>
+				<div class="span6">.span6</div>
+			</div>
+			<div class="row">
+				<div class="span1 offset11">
+					.span1 .offset11
+				</div>
+			</div>
+			<div class="row">
+				<div class="span2 offset10">
+					.span2 .offset10
+				</div>
+			</div>
+			<div class="row">
+				<div class="span3">.span3</div>
+				<div class="span6 offset3">
+					.span6 .offset3
 				</div>
 			</div>
 		</div>
-	</footer>
+
+		<h2>User Interface</h2>
+
+		<h3>Buttons <small>(.button)</small></h3>
+
+		<a href="#test" class="button">Link</a>
+		<input type="submit" class="button" value="Submit" />
+		<button class="button">Button</button>
+		<div class="button">Div</div>
+
+		<h3>Navigation</h3>
+
+		<h4>.navigation</h4>
+		<ul class="navigation debug">
+			<li class="active"><a href="#">Home</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+
+		<h4>.navigation .inline</h4>
+		<ul class="navigation inline debug">
+			<li class="active"><a href="#">Home</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+
+		<h4>.navigation .collapsed</h4>
+		<ul class="navigation collapsed debug">
+			<li class="active"><a href="#">Home</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+
+		<h4>.navigation .inline .pill</h4>
+		<ul class="navigation inline pill debug">
+			<li class="active"><a href="#">Home</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+
+		<h3>Messages</h3>
+
+		<h4>.message .success</h4>
+		<div class="message success">Successful!</div>
+
+		<h4>.message .error</h4>
+		<div class="message error">Oops!</div>
+
+		<h4>.message .warn</h4>
+		<div class="message warn">You have been warned!</div>
+
+		<h4>.message .info</h4>
+		<div class="message info">FYI</div>
+	</div>
+
 </body>
 </html>
